@@ -10,6 +10,7 @@ import {
   AppBar,
   Toolbar
 } from '@mui/material';
+import QuoteDisplay from './QuoteDisplay';
 
 const theme = createTheme({
   palette: {
@@ -112,27 +113,21 @@ function App() {
             variant="subtitle1"
             sx={{ color: '#E87A41', fontWeight: 500 }}
           >
-            AI Workflow Manager Template
+            Daily Inspiration
           </Typography>
 
           <Typography variant="h1" component="h1">
-            quote_display_component
+            Quote of the Day
           </Typography>
 
           <Typography
             variant="subtitle1"
-            sx={{ maxWidth: '600px', mb: 2 }}
+            sx={{ maxWidth: '600px', mb: 4 }}
           >
-            Start building your application.
+            Refresh the page or click the button for a new quote
           </Typography>
 
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-          >
-            Button
-          </Button>
+          <QuoteDisplay />
         </Box>
       </Container>
     </ThemeProvider>
